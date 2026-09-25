@@ -3,7 +3,7 @@
 :root {
   --ink: #26372d;
   --moss: #415b43;
-  --paper: #e9e6dc;
+  --paper: #354b3c;
   --cream: #f5f3eb;
   --clay: #b88461;
 }
@@ -37,7 +37,7 @@ a {
   min-height: min(860px, 100vh);
   position: relative;
   color: var(--cream);
-  background-image: linear-gradient(90deg, rgba(21, 39, 30, .78) 0%, rgba(21, 39, 30, .38) 52%, rgba(21, 39, 30, .12) 100%), url("https://images.unsplash.com/photo-1448375240586-882707db888b?auto=format&fit=crop&w=2200&q=85");
+  background-image: linear-gradient(90deg, rgba(21, 39, 30, 0.782) 0%, rgba(21, 39, 30, .38) 52%, rgba(21, 39, 30, .12) 100%), url("https://images.unsplash.com/photo-1448375240586-882707db888b?auto=format&fit=crop&w=2200&q=85");
   background-attachment: fixed;
   background-size: cover;
   background-position: center;
@@ -47,10 +47,10 @@ a {
 }
 
 .hero::after {
-  background: linear-gradient(to bottom, transparent 0%, rgba(233, 230, 220, .2) 35%, var(--paper) 100%);
+  background: linear-gradient(to bottom, transparent 0%, rgba(65, 91, 67, .2) 45%, var(--paper) 100%);
   bottom: -1px;
   content: "";
-  height: 190px;
+  height: 125px;
   left: 0;
   pointer-events: none;
   position: absolute;
@@ -161,16 +161,18 @@ h1 {
 .scroll-note i { background: #d4b27d; display: block; height: 7px; width: 7px; }
 
 .intro {
+  background: var(--paper);
+  color: var(--cream);
   display: grid;
   gap: 24px 12%;
   grid-template-columns: 1fr 1fr;
-  padding: 150px clamp(24px, 15vw, 230px);
+  padding: 112px clamp(24px, 15vw, 230px) 150px;
 }
 
 .intro .eyebrow { grid-column: 1 / -1; }
 .intro h2 { font-size: clamp(3.3rem, 6vw, 6.2rem); }
 .intro-copy { align-self: end; font-size: 1.05rem; line-height: 1.8; max-width: 360px; }
-.text-link { border-bottom: 1px solid var(--ink); font-size: .75rem; font-weight: 700; letter-spacing: .12em; padding-bottom: 8px; text-transform: uppercase; width: fit-content; }
+.text-link { border-bottom: 1px solid rgba(245, 243, 235, .7); font-size: .75rem; font-weight: 700; letter-spacing: .12em; padding-bottom: 8px; text-transform: uppercase; width: fit-content; }
 .text-link span, .outline-button span { font-size: 1rem; margin-left: 12px; }
 
 .visit-strip {
@@ -195,7 +197,7 @@ h1 {
   .hero-content { padding: 60px 0 90px; }
   .hero-copy { max-width: 310px; }
   .hero-footer { align-items: flex-start; flex-direction: column; gap: 14px; }
-  .intro { display: block; padding: 95px 24px; }
+  .intro { display: block; padding: 80px 24px 95px; }
   .intro h2 { margin-bottom: 35px; }
   .intro-copy { margin-bottom: 30px; }
   .visit-strip { align-items: flex-start; flex-direction: column; gap: 18px; }

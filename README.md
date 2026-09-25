@@ -13,7 +13,7 @@ npm run dev
 
 Open http://localhost:3000 to view the page.
 
-The main page is in `src/app/page.js`, with the responsive visual system in `src/app/globals.css`.
+The main page is in `src/app/page.tsx`, with the responsive visual system in `src/app/globals.css`.
 
 ## Commands
 
